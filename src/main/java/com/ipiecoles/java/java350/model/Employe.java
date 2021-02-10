@@ -11,12 +11,6 @@ import java.util.Objects;
 @Entity
 public class Employe {
 
-    /**
-     *
-     * @param d
-     * @return
-     */
-    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -67,6 +61,11 @@ public class Employe {
         return getNbRtt(LocalDate.now());
     }
 
+    /**
+     *
+     * @param d
+     * @return
+     */
     public Integer getNbRtt(LocalDate d){
         int i1 = d.isLeapYear() ? 365 : 366;int var = 104;
         switch (LocalDate.of(d.getYear(),1,1).getDayOfWeek()){

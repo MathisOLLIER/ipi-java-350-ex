@@ -11,7 +11,12 @@ import java.util.Objects;
 @Entity
 public class Employe {
 
-
+    /**
+     *
+     * @param d
+     * @return
+     */
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
